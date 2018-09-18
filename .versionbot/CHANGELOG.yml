@@ -1,3 +1,38 @@
+- commits:
+    - subject: >-
+        linux-beaglebone: Add am335x-boneblack-emmc-overlay.dtb to the list of
+        compiled dtbs
+      hash: daf9a66bdd01df195c3d0e7d1266eab4ceb0de7a
+      body: |
+        Add the am335x-boneblack-emmc-overlay.dtb file to the list of
+        compiled dtbs
+      footer:
+        Changelog-entry: >-
+          linux-beaglebone: Add am335x-boneblack-emmc-overlay.dtb to the list of
+          compiled dtbs
+        changelog-entry: >-
+          linux-beaglebone: Add am335x-boneblack-emmc-overlay.dtb to the list of
+          compiled dtbs
+        Signed-off-by: Sebastian Panceac <sebastian@resin.io>
+        signed-off-by: Sebastian Panceac <sebastian@resin.io>
+      author: Sebastian Panceac
+    - subject: Add a parsable representation of the changelog
+      hash: 6f7f8633012f9f0c83de49f85b1aa24ab03cf5d0
+      body: |
+        This file allows other components to uniquely parse the information that
+        is contained in the changelog. It will be automatically managed by
+        versionist by appending the new commits on top. This is needed to
+        provide nested-changelogs.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Giovanni Garufi <giovanni@resin.io>
+        signed-off-by: Giovanni Garufi <giovanni@resin.io>
+        Changelog-entry: Add a parsable representation of the changelog
+        changelog-entry: Add a parsable representation of the changelog
+      author: Giovanni Garufi
+  version: 2.15.1+rev2
+  date: 2018-09-18T13:03:49.100Z
 - version: v2.15.1+rev1
   date: 2018-09-06T22:00:00.000Z
   commits:

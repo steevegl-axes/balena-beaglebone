@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.15.1+rev2
+## (2018-09-18)
+
+* Linux-beaglebone: Add am335x-boneblack-emmc-overlay.dtb to the list of compiled dtbs [Sebastian Panceac]
+* Add a parsable representation of the changelog [Giovanni Garufi]
+
 # v2.15.1+rev1
 ## (2018-09-07)
 
