@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.15.1+rev2
+## (2018-11-22)
+
+* beaglebone-pocket: Added machine for PocketBeagle device [Alexandru Costache]
+* Add a parsable representation of the changelog [Giovanni Garufi]
+
 # v2.15.1+rev1
 ## (2018-09-07)
 

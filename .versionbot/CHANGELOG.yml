@@ -1,3 +1,31 @@
+- commits:
+    - subject: 'beaglebone-pocket: Added machine for PocketBeagle device'
+      hash: 8b3aec800a464031814f8796dd1022aa8ca16ef1
+      body: |
+        Added machine files for the PocketBeagle device
+      footer:
+        Changelog-entry: 'beaglebone-pocket: Added machine for PocketBeagle device'
+        changelog-entry: 'beaglebone-pocket: Added machine for PocketBeagle device'
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+    - subject: Add a parsable representation of the changelog
+      hash: 6f7f8633012f9f0c83de49f85b1aa24ab03cf5d0
+      body: |
+        This file allows other components to uniquely parse the information that
+        is contained in the changelog. It will be automatically managed by
+        versionist by appending the new commits on top. This is needed to
+        provide nested-changelogs.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Giovanni Garufi <giovanni@resin.io>
+        signed-off-by: Giovanni Garufi <giovanni@resin.io>
+        Changelog-entry: Add a parsable representation of the changelog
+        changelog-entry: Add a parsable representation of the changelog
+      author: Giovanni Garufi
+  version: 2.15.1+rev2
+  date: 2018-11-22T18:49:12.657Z
 - version: v2.15.1+rev1
   date: 2018-09-06T22:00:00.000Z
   commits:
