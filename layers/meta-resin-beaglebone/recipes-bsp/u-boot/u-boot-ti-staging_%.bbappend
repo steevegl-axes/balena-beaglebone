@@ -12,6 +12,21 @@ SRC_URI_append = " \
     file://U-Boot-3-3-config-am335x_evm-detect-BeagleBone-Blue-using-BLA.patch \
     file://0005-Autoboot-keyboard-beaglebone-fixes.patch \
     file://uEnv.txt_internal \
+   "
+
+RESIN_EXTERNAL_MMC_beaglebone-pocket = "1"
+RESIN_INTERNAL_MMC_beaglebone-pocket = "0"
+
+SRC_URI_append_beaglebone-pocket = " \
+    file://0001-Add-support-for-BeagleBoard.org-PocketBeagle.patch \
+"
+
+SRC_URI_remove_beaglebone-pocket = " \
+    file://0002-am335x_evm.h-Set-not-env-if-CONFIG_EMMC_BOOT.patch \
+    file://U-Boot-1-3-config-am335x_evm-detect-Black-Wireless-using-BWA.patch \
+    file://U-Boot-2-3-config-am335x_evm-detect-Green-Wireless-using-GW1.patch \
+    file://U-Boot-3-3-config-am335x_evm-detect-BeagleBone-Blue-using-BLA.patch \
+    file://0005-Autoboot-keyboard-beaglebone-fixes.patch \
     "
 
 do_deploy_append () {
