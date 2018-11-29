@@ -1,4 +1,19 @@
 - commits:
+    - subject: Add scripts for PocketBeagle usb eth
+      hash: 374fdb90238ad4d528dde2da3cfcd4c606ef768a
+      body: |
+        Integrated and adapted scripts present in the
+        original BeagleBone debian image, which bring up
+        usb ethernet necessary for dashboard and ssh
+      footer:
+        Changelog-entry: Add scripts for PocketBeagle usb eth
+        changelog-entry: Add scripts for PocketBeagle usb eth
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+  version: 2.26.0+rev5
+  date: 2018-11-29T09:31:06.205Z
+- commits:
     - subject: Add icon for PocketBeagle
       hash: efce93cb3b2cc743ea7a1b2b21498f6fb3079321
       body: ''

@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.26.0+rev5
+## (2018-11-29)
+
+* Add scripts for PocketBeagle usb eth [Alexandru Costache]
+
 # v2.26.0+rev4
 ## (2018-11-28)
 
