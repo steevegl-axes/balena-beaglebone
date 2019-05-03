@@ -1,4 +1,20 @@
 - commits:
+    - subject: Add support for OS_KERNEL_CMDLINE
+      hash: b46b811dc8a3eb5e15132878cc138143fcbd4b17
+      body: |
+        The OS_KERNEL_CMDLINE variable is provided by meta-balena with
+        the purpose of supplying kernel cmdline arguments suitable for
+        production images (like for supressing boot messages from being
+        displayed to the console, removing cursor blink etc).
+      footer:
+        Changelog-entry: Add support for OS_KERNEL_CMDLINE
+        changelog-entry: Add support for OS_KERNEL_CMDLINE
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.32.0+rev3
+  date: 2019-05-03T13:44:25.284Z
+- commits:
     - subject: Change the poky submodule to our github mirror
       hash: 891b07eef7393519289c523ee24613afbece6c76
       body: |

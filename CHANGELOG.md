@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.32.0+rev3
+## (2019-05-03)
+
+* Add support for OS_KERNEL_CMDLINE [Florin Sarbu]
+
 # v2.32.0+rev2
 ## (2019-04-25)
 
