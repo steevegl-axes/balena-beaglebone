@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'AxesNetwork Lab Linux Yocto'
 
 steps:
 - script: |
