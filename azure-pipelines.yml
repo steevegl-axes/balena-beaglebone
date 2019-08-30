@@ -1,20 +1,13 @@
-# C/C++ with GCC
-# Build your C/C++ project with GCC using make.
-# Add steps that publish test results, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/apps/c-cpp/gcc
 
 trigger:
 - master
-
-resources:
-  repositories:
-  - repository: self
-    submodules: true
 
 pool:
   name: 'AxesNetwork Lab Linux Yocto'
 
 steps:
+- checkout: self
+  submodules: true
 - task: CmdLine@2
   inputs:
     script: './resin-yocto-scripts/build/barys'
