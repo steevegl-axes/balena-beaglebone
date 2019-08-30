@@ -6,6 +6,11 @@
 trigger:
 - master
 
+resources:
+  repositories:
+  - repository: self
+    submodules: true
+
 pool:
   name: 'AxesNetwork Lab Linux Yocto'
 
