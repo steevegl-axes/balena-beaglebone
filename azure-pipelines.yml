@@ -10,4 +10,6 @@ steps:
   submodules: true
 - task: CmdLine@2
   inputs:
-    script: './balena-yocto-scripts/build/barys'
+    script: |
+      su user
+      ./balena-yocto-scripts/build/barys
