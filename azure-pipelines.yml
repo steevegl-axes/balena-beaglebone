@@ -11,5 +11,4 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      su user
-      ./balena-yocto-scripts/build/barys
+      sudo -u user ./balena-yocto-scripts/build/barys
