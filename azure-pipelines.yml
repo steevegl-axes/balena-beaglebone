@@ -10,4 +10,4 @@ steps:
   submodules: true
 - task: CmdLine@2
   inputs:
-    script: './resin-yocto-scripts/build/barys'
+    script: './balena-yocto-scripts/build/barys'
