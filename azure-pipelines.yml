@@ -10,6 +10,6 @@ pool:
   name: 'AxesNetwork Lab Linux Yocto'
 
 steps:
-- script: |
-    make
-  displayName: 'make'
+- task: CmdLine@2
+  inputs:
+    script: './resin-yocto-scripts/build/barys'
