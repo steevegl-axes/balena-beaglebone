@@ -7,8 +7,11 @@ pool:
 
 steps:
 - checkout: self
+  clean: false
   submodules: true
 - task: CmdLine@2
+  timeoutInMinutes: 1440
   inputs:
     script: |
-      sudo -u user bash ./balena-yocto-scripts/build/barys
+      sudo chmod -R ugo+rwx .
+      sudo su -c "bash ./balena-yocto-scripts/build/barys" user
