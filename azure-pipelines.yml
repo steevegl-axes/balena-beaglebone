@@ -11,4 +11,5 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
+      sudo chmod -R ugo+rwx .
       sudo su -c "bash ./balena-yocto-scripts/build/barys" user
