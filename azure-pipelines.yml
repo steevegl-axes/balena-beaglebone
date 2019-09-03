@@ -9,6 +9,7 @@ steps:
 - checkout: self
   submodules: true
 - task: CmdLine@2
+  timeoutInMinutes: 1440
   inputs:
     script: |
       sudo chmod -R ugo+rwx .
