@@ -2,19 +2,22 @@
 trigger:
 - master
 
-pool:
-  name: 'AxesNetwork Lab Linux Yocto'
-
-steps:
-- checkout: self
-  clean: false
-  submodules: true
-- task: CmdLine@2
+jobs:
+- job: Default
   timeoutInMinutes: 1440
-  inputs:
-    script: |
-      perm=$(stat -c %a $PWD)
-      if [ ! "$perm" = "777" ]; then
-        sudo chmod -R 777 $PWD
-      fi
-      sudo su -c "bash ./balena-yocto-scripts/build/barys" user
+  
+  pool:
+    name: 'AxesNetwork Lab Linux Yocto'
+
+  steps:
+  - checkout: self
+    clean: false
+    submodules: true
+  - task: CmdLine@2
+    inputs:
+      script: |
+        perm=$(stat -c %a $PWD)
+        if [ ! "$perm" = "777" ]; then
+          sudo chmod -R 777 $PWD
+        fi
+        sudo su -c "bash ./balena-yocto-scripts/build/barys" user
