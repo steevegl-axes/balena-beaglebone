@@ -13,8 +13,8 @@ steps:
   timeoutInMinutes: 1440
   inputs:
     script: |
-      perm=$(stat $PWD -c %a "$f")
+      perm=$(stat -c %a $PWD)
       if [ ! "$perm" = "777" ]; then
-        sudo chmod -R 777 .
+        sudo chmod -R 777 $PWD
       fi
       sudo su -c "bash ./balena-yocto-scripts/build/barys" user
