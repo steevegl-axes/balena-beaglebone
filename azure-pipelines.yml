@@ -13,7 +13,7 @@ steps:
   timeoutInMinutes: 1440
   inputs:
     script: |
-      perm=$(stat -c %a "$f")
+      perm=$(stat $PWD -c %a "$f")
       if [ ! "$perm" = "777" ]; then
         sudo chmod -R 777 .
       fi
